@@ -170,3 +170,17 @@ myArray.average(function(val){
 </pre>
 
 Returns the value 2.75 ( = 11 / 5).
+
+Compound queries
+---
+
+As the objects returned from most methods (all except selectById) are Array objects, it's possible to string multiple queries together. E.g.:
+
+<pre>
+var myArray = [1,2,3,4,5,6,7,8,9,10];
+myArray.select(function(val){
+	return val >= 5;
+}).sum();
+</pre>
+
+Returns the value 45 (the sum of values 5, 6, 7, 8, 9 and 10).
