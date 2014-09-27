@@ -184,3 +184,13 @@ myArray.select(function(val){
 </pre>
 
 Returns the value 45 (the sum of values 5, 6, 7, 8, 9 and 10).
+
+Differences from LINQ
+---
+
+There are some key differences to the way LINQ works in C#:
+
+- jsquery extends the Array object rather than being a new type of object
+- no late binding. Queries are evaluated immediately
+ 
+Structuring more identically to LINQ would aid copy and pasting of code from one environment to the other, however the ease of passing JavaScript selector functions around as objects doesn't seem to require a new object type. Hence I prefer this more lightweight JavaScript-specific setup.
