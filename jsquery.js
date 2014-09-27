@@ -2,6 +2,8 @@
  * LINQ style queries for Array objects
  * version 0.0.1
  * Released under the MIT license.
+ *
+ * karl@wedugames.com
  */
 /*
 Pass in a function that acts as a test criteria. Returns an array of elements that match that criteria
