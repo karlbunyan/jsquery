@@ -63,6 +63,13 @@ Array.prototype.take = function(number){
 };
 
 /*
+ Get the first element
+ */
+Array.prototype.first = function(){
+	return this[0];
+};
+
+/*
 If the set isn't numbers, pass in a selector function to query a property and return a number
  */
 Array.prototype.sum = function(selector){
