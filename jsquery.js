@@ -39,6 +39,17 @@ Pass in a function that selects a property
 Array.prototype.select = Array.prototype.where;
 
 /*
+ Like where, but returns the first item, or null
+ */
+Array.prototype.single = function(test){
+	var matching = this.where(test)
+	if(matching.length)
+		return matching[0];
+	else
+		return null;
+};
+
+/*
  Pass in an id to select
  */
 Array.prototype.selectById = function(id){
